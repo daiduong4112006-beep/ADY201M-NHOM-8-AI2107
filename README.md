@@ -16,13 +16,12 @@
    - [2.3 Dữ liệu sạch sau tiền xử lý](#23-dữ-liệu-sạch-sau-tiền-xử-lý)
 3. [III. Các công cụ và Thư viện sử dụng](#iii-các-công-cụ-và-thư-viện-sử-dụng)
 4. [IV. Cấu trúc thư mục dự án](#iv-cấu-trúc-thư-mục-dự-án)
-5. [V. Tóm tắt công việc đã hoàn thành](#v-tóm-tắt-công-việc-đã-hoàn-thành)
-   - [1. Chọn đề tài & Nghiên cứu dữ liệu](#1-chọn-đề-tài--nghiên-cứu-dữ-liệu)
-   - [2. Làm sạch & Tiền xử lý dữ liệu](#2-làm-sạch--tiền-xử-lý-dữ-liệu-data-cleaning--feature-engineering)
-   - [3. Phân tích khám phá bằng Python (EDA)](#3-phân-tích-khám-phá-bằng-python-eda)
-   - [4. Phân tích chuyên sâu bằng SQL](#4-phân-tích-chuyên-sâu-bằng-sql-10-queries)
-   - [5. Kế hoạch giai đoạn tiếp theo](#5-kế-hoạch-giai-đoạn-tiếp-theo)
-6. [VI. Thành viên & Minh chứng đóng góp](#vi-thành-viên--minh-chứng-đóng-góp)
+5. [V. Tóm tắt tiến độ & Công việc đã hoàn thành](#v-tóm-tắt-tiến-độ--công-việc-đã-hoàn-thành)
+   - [1. Chọn đề tài & Nghiên cứu dữ liệu (Đã hoàn thành)](#1-chọn-đề-tài--nghiên-cứu-dữ-liệu-đã-hoàn-thành)
+   - [2. Làm sạch & Tiền xử lý dữ liệu (Đã hoàn thành)](#2-làm-sạch--tiền-xử-lý-dữ-liệu-data-cleaning--feature-engineering-đã-hoàn-thành)
+   - [3. Phân tích chuyên sâu bằng SQL (Đã hoàn thành)](#3-phân-tích-chuyên-sâu-bằng-sql-10-queries-đã-hoàn-thành)
+   - [4. Kế hoạch giai đoạn tiếp theo (Đang triển khai)](#4-kế-hoạch-giai-đoạn-tiếp-theo-đang-triển-khai)
+6. [VI. Thành viên thực hiện](#vi-thành-viên-thực-hiện)
 
 ---
 
@@ -155,19 +154,19 @@ ADY201M-NHOM-8-AI2107/
 │       └── olist_freight_clean.csv          # Bảng dữ liệu cuối cùng (108,336 dòng × 28 cột)
 │
 ├── src/                                     # Toàn bộ mã nguồn dự án
-│   ├── 01_data_cleaning/                    # Tiền xử lý, lọc lỗi, impute và tạo đặc trưng
+│   ├── 01_data_cleaning/                    # [ĐÃ HOÀN THÀNH] Tiền xử lý, lọc lỗi, impute và tạo đặc trưng
 │   │   └── Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển Olist.ipynb
 │   │
-│   ├── 02_sql_analysis/                     # Phân tích khám phá dữ liệu chuyên sâu bằng SQL
+│   ├── 02_sql_analysis/                     # [ĐÃ HOÀN THÀNH] Phân tích khám phá dữ liệu chuyên sâu bằng SQL
 │   │   └── SQL_Analysis_Freight_Full.ipynb  # 10 câu truy vấn SQLite đa chiều
 │   │
-│   ├── 03_python_analysis/                  # Phân tích khám phá nâng cao & tương quan (Python)
+│   ├── 03_python_analysis/                  # [KẾ HOẠCH TIẾP THEO] Phân tích tương quan & EDA (Python)
 │   │   └── eda_correlation.ipynb
 │   │
-│   ├── 04_regression/                       # Xây dựng và kiểm định mô hình học máy
+│   ├── 04_regression/                       # [KẾ HOẠCH TIẾP THEO] Xây dựng và kiểm định mô hình học máy
 │   │   └── regression_model.ipynb
 │   │
-│   └── 05_visualization/                    # Trực quan hóa và biểu đồ
+│   └── 05_visualization/                    # [KẾ HOẠCH TIẾP THEO] Trực quan hóa và biểu đồ
 │       └── charts.ipynb
 │
 ├── reports/                                 # Báo cáo, slide thuyết trình và tài liệu nhóm
@@ -179,14 +178,16 @@ ADY201M-NHOM-8-AI2107/
 
 ---
 
-## V. TÓM TẮT CÔNG VIỆC ĐÃ HOÀN THÀNH
+## V. TÓM TẮT TIẾN ĐỘ & CÔNG VIỆC ĐÃ HOÀN THÀNH
 
-### 1. Chọn đề tài & Nghiên cứu dữ liệu
+> ⏳ **Hiện trạng tiến độ:** Nhóm đã hoàn thành xuất sắc các giai đoạn từ **Nghiên cứu dữ liệu**, **Làm sạch & Tiền xử lý dữ liệu** đến **Phân tích chuyên sâu bằng SQL (10 Queries)**. Các bước phân tích tương quan bằng Python (EDA), xây dựng mô hình hồi quy (Regression) và trực quan hóa (Visualization) là nội dung của giai đoạn tiếp theo.
+
+### 1. Chọn đề tài & Nghiên cứu dữ liệu (Đã hoàn thành)
 - Khảo sát thực trạng thị trường logistics TMĐT thế giới và Việt Nam, xác định vai trò trọng yếu của chi phí vận chuyển trong tỷ lệ bỏ rơi giỏ hàng.
 - Lựa chọn đề tài, xác định bài toán, xây dựng 5 câu hỏi nghiên cứu (RQ1 - RQ5) và đặt ra các chỉ số định lượng đánh giá (MAE, RMSE, MAPE, R²).
 - Nghiên cứu sơ đồ quan hệ thực thể (ERD) và cấu trúc 9 bảng dữ liệu từ Olist Kaggle.
 
-### 2. Làm sạch & Tiền xử lý dữ liệu (Data Cleaning & Feature Engineering)
+### 2. Làm sạch & Tiền xử lý dữ liệu (Data Cleaning & Feature Engineering) (Đã hoàn thành)
 Thực hiện toàn diện trong notebook `01_data_cleaning`:
 - **Đánh giá chất lượng dữ liệu ban đầu:** Kiểm tra kiểu dữ liệu, tỷ lệ khuyết thiếu (missing values), dữ liệu trùng lặp và các giá trị sai miền vật lý.
 - **Xử lý Geolocation:** Khử trùng lặp trên 1.000.000 dòng tọa độ địa lý, tính toán tâm vị trí trung bình theo từng mã `zip_code_prefix`.
@@ -201,15 +202,10 @@ Thực hiện toàn diện trong notebook `01_data_cleaning`:
   - Tính khoảng cách Haversine giữa người bán và người mua (`distance_km`).
   - Tính thể tích sản phẩm (`volume_cm3 = length * height * width`).
   - Gắn nhãn giao hàng nội bang (`is_same_state`).
+- **Đầu ra:** Xuất bảng dữ liệu sạch `olist_freight_clean.csv` (108,336 dòng × 28 cột, Grain: `(order_id, order_item_id)`).
 
-### 3. Phân tích khám phá bằng Python (EDA)
-Thực hiện trong `03_python_analysis`:
-- Khảo sát phân phối lệch phải (*skewed distribution*) của `freight_value` và `product_weight_g`.
-- Tính toán ma trận hệ số tương quan (Pearson & Spearman) giữa các biến độc lập và biến mục tiêu `freight_value`.
-- Phát hiện biến có tương quan mạnh nhất với phí vận chuyển là trọng lượng sản phẩm (`weight_g`), tiếp theo là khoảng cách (`distance_km`) và thể tích (`volume_cm3`).
-
-### 4. Phân tích chuyên sâu bằng SQL (10 Queries)
-Thực hiện nạp cơ sở dữ liệu SQLite trong notebook `02_sql_analysis`:
+### 3. Phân tích chuyên sâu bằng SQL (10 Queries) (Đã hoàn thành)
+Thực hiện nạp cơ sở dữ liệu SQLite trong notebook `02_sql_analysis`, giải quyết các khía cạnh định lượng của phí vận chuyển:
 - **Query 1:** Phí ship trung bình theo 5 nhóm khoảng cách (dưới 100km, 100-500km, 500-1000km, 1000-2000km, trên 2000km) -> Xác nhận phí ship tăng rõ rệt khi vượt qua mốc 1000km.
 - **Query 2:** So sánh giao hàng cùng bang vs khác bang -> Giao hàng nội bang tiết kiệm trung bình 35 - 45% chi phí vận chuyển.
 - **Query 3:** Top 10 danh mục sản phẩm có phí ship cao nhất (Nội thất cồng kềnh, thiết bị công nghiệp nặng).
@@ -221,14 +217,14 @@ Thực hiện nạp cơ sở dữ liệu SQLite trong notebook `02_sql_analysis`
 - **Query 9:** Phân tích phí vận chuyển theo số lượng mặt hàng trong đơn (chỉ ra hiệu ứng gộp đơn giúp giảm phí trung bình trên từng sản phẩm).
 - **Query 10:** Đánh giá chất lượng dữ liệu: kiểm tra tỷ lệ bản ghi bị suy diễn tọa độ theo từng bang người bán.
 
-### 5. Kế hoạch giai đoạn tiếp theo
-- Hoàn thiện mô hình hồi quy (Baseline Linear Regression, Ridge/Lasso, Random Forest Regressor).
-- Tinh chỉnh siêu tham số (*Hyperparameter Tuning*) và đánh giá bằng 5-Fold Cross Validation.
-- Đóng gói biểu đồ trực quan hóa thành Dashboard tra cứu mức phí tham khảo phục vụ người dùng cuối.
+### 4. Kế hoạch giai đoạn tiếp theo (Đang triển khai)
+- **Phân tích khám phá bằng Python (`03_python_analysis`):** Trực quan hóa ma trận tương quan (Pearson/Spearman), kiểm tra đa cộng tuyến (VIF) và khảo sát kỹ hơn phân phối lệch của phí vận chuyển.
+- **Xây dựng mô hình hồi quy (`04_regression`):** Huấn luyện các mô hình Baseline (Linear Regression, Ridge, Lasso) và mô hình phi tuyến (Random Forest, Gradient Boosting), kết hợp kiểm định chéo 5-Fold Cross Validation.
+- **Trực quan hóa và báo cáo (`05_visualization`):** Thiết kế dashboard biểu đồ trực quan và hoàn thiện báo cáo phân tích toàn diện.
 
 ---
 
-## VI. THÀNH VIÊN & MINH CHỨNG ĐÓNG GÓP
+## VI. THÀNH VIÊN THỰC HIỆN
 
 Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107**:
 
