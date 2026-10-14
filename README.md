@@ -171,7 +171,7 @@ ADY201M-NHOM-8-AI2107/
 │       └── charts.ipynb
 │
 ├── reports/                                 # Báo cáo, slide thuyết trình và tài liệu nhóm
-│   └── Tài liệu không có tiêu đề.docx
+│   └── Báo cáo Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển (Olist).docx
 │
 ├── .gitignore                               # Quy tắc bỏ qua file tạm, cache
 └── README.md                                # Tài liệu tổng quan dự án
@@ -240,3 +240,4 @@ Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107
 
 ---
 *Dự án phục vụ mục đích học tập và nghiên cứu môn học ADY201M. Mọi thông tin đóng góp và phản hồi xin vui lòng tạo Issue trên kho lưu trữ GitHub này.*
+
