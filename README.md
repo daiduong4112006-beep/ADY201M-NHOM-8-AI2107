@@ -232,11 +232,11 @@ Thực hiện nạp cơ sở dữ liệu SQLite trong notebook `02_sql_analysis`
 
 Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107**:
 
-| STT | Họ và Tên | Mã Sinh Viên (MSSV) | Vai trò chính | Nhiệm vụ đảm nhiệm cụ thể | Tỷ lệ đóng góp |
-|:---:|:---|:---:|:---|:---|:---:|
-| 1 | **Kiều Đại Dương** | **HE201928** | Trưởng nhóm / Data Analyst | - Quản lý tiến độ dự án, phân công công việc.<br>- Thiết lập GitHub repo, cấu trúc dự án và tài liệu `README.md`.<br>- Phân tích tương quan dữ liệu (Python EDA), kiểm thử các giả thuyết nghiên cứu.<br>- Tham gia xây dựng kịch bản kiểm thử mô hình hồi quy. | 100% |
-| 2 | **Trần Chí Kiên** | **HE200774** | Data Engineer / Specialist | - Khảo sát và đánh giá chất lượng 9 bảng dữ liệu Olist.<br>- Xây dựng toàn bộ pipeline làm sạch dữ liệu trong `01_data_cleaning`.<br>- Xử lý chuẩn hóa tọa độ Geolocation, thiết kế Audit Trail 5 bước và Feature Engineering (`distance_km`, `volume_cm3`). | 100% |
-| 3 | **Quách Xuân Thành** | **HE204852** | SQL Analyst / Data Modeler | - Thiết kế cấu trúc cơ sở dữ liệu quan hệ trên SQLite.<br>- Xây dựng và tối ưu 10 câu truy vấn SQL phân tích nghiệp vụ sâu trong `02_sql_analysis`.<br>- Trích xuất các insight nghiệp vụ về cước phí theo địa lý, mùa vụ và danh mục sản phẩm. | 100% |
+| STT | Họ và Tên | Mã Sinh Viên (MSSV) | Vai trò chính | Nhiệm vụ đảm nhiệm cụ thể |
+|:---:|:---|:---:|:---|:---|
+| 1 | **Kiều Đại Dương** | **HE201928** | Trưởng nhóm / Data Analyst | - Quản lý tiến độ dự án, phân công công việc.<br>- Thiết lập GitHub repo, cấu trúc dự án và tài liệu `README.md`.<br>- Phân tích tương quan dữ liệu (Python EDA), kiểm thử các giả thuyết nghiên cứu.<br>- Tham gia xây dựng kịch bản kiểm thử mô hình hồi quy. |
+| 2 | **Trần Chí Kiên** | **HE200774** | Data Engineer / Specialist | - Khảo sát và đánh giá chất lượng 9 bảng dữ liệu Olist.<br>- Xây dựng toàn bộ pipeline làm sạch dữ liệu trong `01_data_cleaning`.<br>- Xử lý chuẩn hóa tọa độ Geolocation, thiết kế Audit Trail 5 bước và Feature Engineering (`distance_km`, `volume_cm3`). |
+| 3 | **Quách Xuân Thành** | **HE204852** | SQL Analyst / Data Modeler | - Thiết kế cấu trúc cơ sở dữ liệu quan hệ trên SQLite.<br>- Xây dựng và tối ưu 10 câu truy vấn SQL phân tích nghiệp vụ sâu trong `02_sql_analysis`.<br>- Trích xuất các insight nghiệp vụ về cước phí theo địa lý, mùa vụ và danh mục sản phẩm. |
 
 ---
 *Dự án phục vụ mục đích học tập và nghiên cứu môn học ADY201M. Mọi thông tin đóng góp và phản hồi xin vui lòng tạo Issue trên kho lưu trữ GitHub này.*
