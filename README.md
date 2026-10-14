@@ -23,10 +23,8 @@
    - [4. Kế hoạch giai đoạn tiếp theo (Đang triển khai)](#4-kế-hoạch-giai-đoạn-tiếp-theo-đang-triển-khai)
 6. [VI. Phân công công việc & Minh chứng đóng góp](#vi-phân-công-công-việc--minh-chứng-đóng-góp)
    - [6.1 Danh sách thành viên](#61-danh-sách-thành-viên)
-   - [6.2 Phân công trách nhiệm (Assign Responsibilities)](#62-phân-công-trách-nhiệm-assign-responsibilities)
-   - [6.3 Minh chứng đóng góp cụ thể (Evidence of Contributions)](#63-minh-chứng-đóng-góp-cụ-thể-evidence-of-contributions)
-   - [6.4 Quy trình làm việc nhóm & Kiểm soát phiên bản (Version Control Workflow)](#64-quy-trình-làm-việc-nhóm--kiểm-soát-phiên-bản-version-control-workflow)
-7. [VII. Bảng đối chiếu yêu cầu môn học (Rubric Mapping)](#vii-bảng-đối-chiếu-yêu-cầu-môn-học-rubric-mapping)
+   - [6.2 Phân công trách nhiệm](#62-phân-công-trách-nhiệm)
+   - [6.3 Minh chứng đóng góp cụ thể](#63-minh-chứng-đóng-góp-cụ-thể)
 
 ---
 
@@ -243,7 +241,7 @@ Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107
 
 ---
 
-### 6.2 Phân công trách nhiệm (Assign Responsibilities)
+### 6.2 Phân công trách nhiệm
 Để đảm bảo tiến độ và chất lượng theo yêu cầu học phần, các thành viên trong nhóm thống nhất phân công trách nhiệm bình đẳng như sau:
 
 | Thành viên | Trách nhiệm đảm nhiệm chính | Sản phẩm phụ trách |
@@ -254,7 +252,7 @@ Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107
 
 ---
 
-### 6.3 Minh chứng đóng góp cụ thể (Evidence of Contributions)
+### 6.3 Minh chứng đóng góp cụ thể
 
 | Thành viên | Minh chứng công việc (Deliverables / Artifacts) | Trạng thái |
 |:---|:---|:---:|
@@ -264,33 +262,5 @@ Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107
 
 ---
 
-### 6.4 Quy trình làm việc nhóm & Kiểm soát phiên bản (Version Control Workflow)
-Để đảm bảo sự cộng tác hiệu quả (Team Collaboration) và theo dõi lịch sử thay đổi (Track Changes) theo Task 3 & Task 4:
-1. **Quản lý nhánh (Branching Strategy):**
-   - `main`: Nhánh ổn định chứa mã nguồn đã kiểm thử và các mốc bàn giao chính thức.
-   - Nhánh chức năng theo module: `feature/data-cleaning`, `feature/sql-analysis`, `feature/documentation`.
-2. **Quy chuẩn thông điệp Commit (Conventional Commits):**
-   - `feat:` Bổ sung tính năng, truy vấn hoặc notebook mới (vd: `feat: them 10 truy van SQL phan tich phi ship`).
-   - `data:` Cập nhật dữ liệu hoặc file tiền xử lý (vd: `data: them tap du lieu clean olist_freight_clean.csv`).
-   - `docs:` Cập nhật tài liệu, README hoặc báo cáo (vd: `docs: cap nhat bao cao lam sach du lieu`).
-   - `fix:` Khắc phục lỗi dữ liệu, kiểu dữ liệu hoặc liên kết.
-3. **Phối hợp & Phản hồi:** Mọi thành viên kiểm thử chéo kết quả trên Google Colab / SQLite trước khi hợp nhất vào nhánh chính.
-
----
-
-## VII. BẢNG ĐỐI CHIẾU YÊU CẦU MÔN HỌC (RUBRIC MAPPING)
-
-Dự án đáp ứng đầy đủ và toàn diện 5 nhiệm vụ trọng tâm theo tiêu chí đánh giá môn học:
-
-| Nhiệm vụ (Tasks) | Yêu cầu chuẩn | Mức độ đáp ứng trong Repository này |
-|:---|:---|:---|
-| **Task 1: Create a GitHub Repository** | Tiêu đề dự án, mục tiêu nghiên cứu, mô tả tập dữ liệu, danh sách thành viên nhóm. | ✅ **Đạt 100%:** Kho lưu trữ `ADY201M-NHOM-8-AI2107` mô tả rõ tiêu đề, mục tiêu chung/cụ thể, chi tiết 9 bảng Olist và thông tin nhóm. |
-| **Task 2: Organize Project Files** | Phân chia thư mục hợp lý cho: Data, SQL scripts, Python notebooks, Figures/visualizations, Reports & documentation. | ✅ **Đạt 100%:** Đã phân chia chuẩn thành `data/` (raw & clean), `src/02_sql_analysis/` (chứa `.sql` và `.ipynb`), `src/01_...` (notebooks), `src/05_...` (visualizations), `reports/` (chứa `.docx`). |
-| **Task 3: Version Control** | Tải tệp lên Git, ghi nhận lịch sử thay đổi rõ ràng qua từng giai đoạn phát triển. | ✅ **Đạt 100%:** Lịch sử commit chi tiết theo từng tính năng, áp dụng chuẩn commit rõ ràng, lưu vết đầy đủ quá trình phát triển. |
-| **Task 4: Team Collaboration** | Phân công trách nhiệm rõ ràng, mọi thành viên đều có phần đóng góp vào dự án. | ✅ **Đạt 100%:** Trình bày chi tiết bảng phân công trách nhiệm, quy trình phân nhánh và phối hợp làm việc nhóm ở Mục VI. |
-| **Task 5: Project Documentation** | Cập nhật `README.md` với: Tổng quan, Mô tả bài toán, Nguồn dữ liệu, Công cụ & thư viện, Cấu trúc dự án, Tóm tắt công việc đã làm, Minh chứng đóng góp. | ✅ **Đạt 100%:** `README.md` được biên soạn chuyên nghiệp, chi tiết đầy đủ 7 mục với công thức toán học, trích dẫn số liệu thực tế và bảng đối chiếu. |
-
 ---
 *Dự án phục vụ mục đích học tập và nghiên cứu môn học ADY201M. Mọi đóng góp và phản hồi xin vui lòng tạo Issue trên kho lưu trữ GitHub này.*
-
-
