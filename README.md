@@ -235,22 +235,22 @@ Thực hiện nạp cơ sở dữ liệu SQLite trong notebook `02_sql_analysis`
 ### 6.1 Danh sách thành viên
 Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107**:
 
-| STT | Họ và Tên | Mã Sinh Viên (MSSV) | Vai trò chính |
+| STT | Họ và Tên | Mã Sinh Viên (MSSV) | Vai trò |
 |:---:|:---|:---:|:---|
-| 1 | **Kiều Đại Dương** | **HE201928** | Trưởng nhóm / Quản lý dự án & Data Analyst |
-| 2 | **Trần Chí Kiên** | **HE200774** | Kỹ sư dữ liệu chính (Data Engineer / Specialist) |
-| 3 | **Quách Xuân Thành** | **HE204852** | Chuyên viên phân tích SQL & Mô hình hóa (SQL & Data Modeler) |
+| 1 | **Kiều Đại Dương** | **HE201928** | Thành viên |
+| 2 | **Trần Chí Kiên** | **HE200774** | Thành viên |
+| 3 | **Quách Xuân Thành** | **HE204852** | Thành viên |
 
 ---
 
 ### 6.2 Phân công trách nhiệm (Assign Responsibilities)
-Để đảm bảo tiến độ và chất lượng theo yêu cầu học phần, nhóm phân chia trách nhiệm cụ thể như sau:
+Để đảm bảo tiến độ và chất lượng theo yêu cầu học phần, các thành viên trong nhóm thống nhất phân công trách nhiệm bình đẳng như sau:
 
 | Thành viên | Trách nhiệm đảm nhiệm chính | Sản phẩm phụ trách |
 |:---|:---|:---|
-| **Kiều Đại Dương**<br>(*Trưởng nhóm*) | - Khởi tạo và thiết lập GitHub Repository, quản lý cấu trúc dự án chuẩn modular.<br>- Xây dựng và duy trì tài liệu dự án (`README.md`, tiêu chuẩn mã nguồn, `.gitignore`).<br>- Giám sát tiến độ, điều phối các nhánh Git và giải quyết xung đột mã nguồn.<br>- Phân tích tương quan dữ liệu, kiểm thử mô hình và tổng hợp báo cáo. | - Repository GitHub: `ADY201M-NHOM-8-AI2107`<br>- Tài liệu dự án: `README.md`<br>- Quản lý phiên bản (Git tags, commits) |
-| **Trần Chí Kiên** | - Khảo sát chất lượng 9 tập dữ liệu gốc Olist từ Kaggle.<br>- Thiết kế quy trình tiền xử lý và Audit Trail 5 bước loại trừ dữ liệu lỗi.<br>- Khử trùng lặp Geolocation, tính tọa độ trọng tâm theo zip code và tính khoảng cách Haversine.<br>- Xử lý khuyết thiếu, chuẩn hóa grain và trích xuất bảng sạch `olist_freight_clean.csv`. | - Notebook: `src/01_data_cleaning/...Olist.ipynb`<br>- Dữ liệu sạch: `data/clean/olist_freight_clean.csv`<br>- Tài liệu báo cáo quy trình làm sạch dữ liệu |
-| **Quách Xuân Thành** | - Thiết kế cấu trúc cơ sở dữ liệu quan hệ trên SQLite nạp dữ liệu sạch.<br>- Xây dựng, tối ưu hóa và thực thi 10 truy vấn SQL giải quyết các câu hỏi nghiên cứu (RQ1 - RQ3).<br>- Phân tích đa chiều về cước phí theo địa lý (nội bang/liên bang), khoảng cách, trọng lượng và mùa vụ.<br>- Xuất file truy vấn SQL thuần và đồng biên soạn báo cáo phân tích. | - Notebook: `src/02_sql_analysis/SQL_Analysis_Freight_Full.ipynb`<br>- Script: `src/02_sql_analysis/freight_analysis_queries.sql`<br>- Tệp báo cáo chính thức trong `reports/` |
+| **Kiều Đại Dương** | - Điều phối tiến độ dự án, khởi tạo và quản lý kho lưu trữ GitHub Repository.<br>- Biên soạn tài liệu dự án `README.md` theo 5 Task chuẩn rubric của môn học.<br>- Viết nội dung **Báo cáo Phần 1** (Miêu tả bài toán thực tiễn, lý do chọn đề tài, mục tiêu nghiên cứu, câu hỏi nghiên cứu RQ1 - RQ5, chỉ số đánh giá).<br>- Phụ trách **Phần code SQL** (`src/02_sql_analysis/`): Thiết kế cấu trúc cơ sở dữ liệu SQLite, viết và tối ưu 10 câu truy vấn SQL phân tích chuyên sâu, trích xuất file script `freight_analysis_queries.sql`. | - Repository GitHub: `ADY201M-NHOM-8-AI2107`<br>- Tài liệu dự án: `README.md`<br>- Notebook: `src/02_sql_analysis/SQL_Analysis_Freight_Full.ipynb`<br>- Script SQL: `src/02_sql_analysis/freight_analysis_queries.sql`<br>- Soạn thảo Báo cáo Phần 1 |
+| **Trần Chí Kiên** | - Phụ trách **Phần làm sạch & tiền xử lý dữ liệu** (`src/01_data_cleaning/`): Khảo sát 9 bảng dữ liệu Olist, khử trùng lặp 1.000.000 dòng tọa độ Geolocation, thiết kế Audit Trail 5 bước loại trừ dữ liệu lỗi, tính khoảng cách Haversine (`distance_km`) và thể tích (`volume_cm3`).<br>- Viết nội dung **Báo cáo từ Phần 2** (Chi tiết quy trình làm sạch và chuẩn bị dữ liệu, đánh giá chất lượng và xuất bảng sạch). | - Notebook: `src/01_data_cleaning/Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển Olist.ipynb`<br>- Tập dữ liệu sạch: `data/clean/olist_freight_clean.csv`<br>- Soạn thảo Báo cáo từ Phần 2 |
+| **Quách Xuân Thành** | - Cùng phối hợp phụ trách **Phần làm sạch & tiền xử lý dữ liệu** (`src/01_data_cleaning/`): Thẩm định kiểu dữ liệu, xử lý giá trị khuyết thiếu (imputation) theo trọng tâm bang, kiểm tra tính nhất quán logic nghiệp vụ của các trường giá và cước phí.<br>- Viết nội dung **Báo cáo từ Phần 2** (Phân tích các bước chuyển đổi dữ liệu, xử lý outlier và tổng hợp số liệu báo cáo). | - Phối hợp phát triển notebook `01_data_cleaning`<br>- File báo cáo chính thức: `reports/Báo cáo Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển (Olist).docx`<br>- Soạn thảo Báo cáo từ Phần 2 |
 
 ---
 
@@ -258,9 +258,9 @@ Dự án được thực hiện bởi các thành viên **Nhóm 8 - Lớp AI2107
 
 | Thành viên | Minh chứng công việc (Deliverables / Artifacts) | Trạng thái |
 |:---|:---|:---:|
-| **Kiều Đại Dương** | - Khởi tạo kho lưu trữ GitHub và cấu hình chuẩn `.gitignore`, nhánh `main`.<br>- Soạn thảo hoàn chỉnh tài liệu `README.md` theo 5 Task chuẩn rubric của đề bài.<br>- Tổ chức thư mục dự án theo cấu trúc chuẩn: `data/`, `src/`, `reports/`.<br>- Thực hiện kiểm thử quy trình đẩy mã nguồn và đồng bộ thay đổi giữa các thành viên. | **Đã hoàn thành** |
-| **Trần Chí Kiên** | - Xây dựng notebook `01_data_cleaning`: Xử lý 112.650 dòng dữ liệu ban đầu, giảm xuống 108.336 dòng qua 5 bước audit trail (loại 3,83% lỗi).<br>- Thuật toán khử trùng lặp 1.000.000 dòng `olist_geolocation_dataset.csv`.<br>- Hàm tính khoảng cách địa lý Haversine `distance_km` và thể tích `volume_cm3`.<br>- Xuất bảng dữ liệu sạch `olist_freight_clean.csv` kích thước 108.336 dòng × 28 cột. | **Đã hoàn thành** |
-| **Quách Xuân Thành** | - Xây dựng notebook `02_sql_analysis` với 10 câu truy vấn SQLite đa chiều.<br>- Trích xuất script `freight_analysis_queries.sql` độc lập phục vụ kiểm thử.<br>- Tìm ra insight trọng yếu: Giao hàng nội bang rẻ hơn 35-45% so với liên bang; phí ship tăng vọt khi khoảng cách > 1.000km; trọng lượng là yếu tố chi phối mạnh nhất.<br>- Soạn thảo tệp báo cáo `Báo cáo Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển (Olist).docx` (189 KB). | **Đã hoàn thành** |
+| **Kiều Đại Dương** | - Khởi tạo và quản trị kho lưu trữ GitHub, thiết lập nhánh `main`, file `.gitignore`, cấu trúc thư mục modular.<br>- Xây dựng notebook `02_sql_analysis` và xuất script `freight_analysis_queries.sql` với 10 câu truy vấn SQLite giải quyết các câu hỏi RQ1 - RQ3.<br>- Biên soạn hoàn chỉnh tài liệu `README.md` đáp ứng 5 Task của rubric.<br>- Soạn thảo nội dung Phần 1 trong Báo cáo (Lý do chọn đề tài, bài toán, mục tiêu, chỉ số). | **Đã hoàn thành** |
+| **Trần Chí Kiên** | - Xây dựng notebook `01_data_cleaning`: Xử lý 112.650 dòng dữ liệu ban đầu, giảm xuống 108.336 dòng qua 5 bước audit trail (loại 3,83% lỗi hợp lý).<br>- Xây dựng thuật toán khử trùng lặp 1.000.000 dòng Geolocation và tính khoảng cách Haversine `distance_km`.<br>- Xuất bảng dữ liệu sạch `olist_freight_clean.csv` kích thước 108.336 dòng × 28 cột.<br>- Soạn thảo nội dung Phần 2 trong tệp Báo cáo chính thức. | **Đã hoàn thành** |
+| **Quách Xuân Thành** | - Cùng hoàn thiện pipeline làm sạch dữ liệu trong notebook `01_data_cleaning`, kiểm định chất lượng các biến đặc trưng sau khi merge 9 bảng.<br>- Xử lý thống kê outlier trên các biến vật lý và xác thực tính hợp lệ của mã bưu chính / mã bang.<br>- Soạn thảo nội dung Phần 2 trong tệp Báo cáo chính thức và tổng hợp file Word hoàn chỉnh `Báo cáo Làm sạch và Chuẩn bị dữ liệu – Dự đoán phí vận chuyển (Olist).docx` (189 KB). | **Đã hoàn thành** |
 
 ---
 
